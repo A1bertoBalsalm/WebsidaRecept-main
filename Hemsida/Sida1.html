@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sida1.css">
+    <script src="./Sida1.js"></script>
+    <title>Document</title>
+    <style>
+
+        #content{
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="hemsida">
+    <!--Lista med recept-->
+        <div>
+            <ul class="lista">
+                <button class="lista-elm" onclick="Ostskina()">■</button>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+                <li class="lista-elm"><a href="" class="lista-button" onclick="Ostskina()">Ostmacka</a></li>
+
+            </ul>
+
+        </div>
+
+        <!--Recept-->
+
+        <div id="content" class="is-hidden">
+            <div class="Rec-huvud">
+                <h1 class="rubriker">Saffransbullar med vanilj</h1>
+                <div class="Rec-tid">
+                <img class="Rec-tidbild" src="./bilder/61227.png" alt="">
+                <p class="rubriker">Över 60 min</p>
+                </div>
+            </div>
+            <div class="Rec-bilddiv">
+                <img class="Rec-bild" src="./bilder/saffransbullar_med_vanilj.jpg" alt="">
+            </div>
+            <div class="Rec-ingre">
+                <h2 class="rubriker">Ingredienser</h2>
+                <ul>
+                    <li class="Rec-ingrelist">50 g färsk jäst</li>
+                    <li class="Rec-ingrelist">150 g smör eller margarin</li>
+                    <li class="Rec-ingrelist">2 påsar saffran eller saffranspaste (à 1/2 g)</li>
+                    <li class="Rec-ingrelist">1 1/2 dl strösocker</li>
+                    <li class="Rec-ingrelist">5 dl mjölk</li>
+                    <li class="Rec-ingrelist">250 g kvarg (10 %)</li>
+                    <li class="Rec-ingrelist">1/2 tsk salt</li>
+                    <li class="Rec-ingrelist">1 ägg</li>
+                    <li class="Rec-ingrelist">17 dl vetemjöl (15-17 dl motsvarar 900-1020 g)</li>
+                    <li class="Rec-ingrelist">200 g rumstempererat smör eller margarin</li>
+                    <li class="Rec-ingrelist">1 1/2 dl strösocker</li>
+                    <li class="Rec-ingrelist">4 tsk vaniljsocker</li>
+                </ul>
+                
+
+            </div>
+            <div class="Rec-gör">
+                <h2 class="rubriker">Gör så här</h2>
+                <ol>
+                    <li class="Rec-görlist">Smula ner jästen i en bunke.</li>
+                    <li class="Rec-görlist">Smält matfettet i en kastrull.</li>
+                    <li class="Rec-görlist">Stöt saffranet (ej pasten) med lite av sockret i en mortel. Rör ner saffranet i det smälta matfettet. Tillsätt mjölken och ljumma degspadet till ca 37°C.</li>
+                    <li class="Rec-görlist">Rör ut jästen i lite av degspadet. Tillsätt resten av degspadet, socker, kvarg, salt och ägg. Arbeta i nästan allt vetemjöl och arbeta degen ca 5 minuter i maskin eller 10 minuter för hand. Strö lite mjöl över degen. Låt den jäsa under bakduk 30-45 minuter.</li>
+                    <li class="Rec-görlist">Fyllning: Rör matfett, socker och vaniljsocker smidigt.</li>
+                    <li class="Rec-görlist">
+                        Ta upp degen på mjölad arbetsbänk. Knåda ev. i resten av mjölet och dela degen i 2 delar (för 45 st).</li>
+                    <li class="Rec-görlist">
+                        Kavla ut varje del på mjölad arbetsbänk till en kaka ca 25x60 cm. Bred på fyllningen. Vik kakan dubbel på längden, tryck till den lätt med handen. Skär 2-3 cm breda remsor, dela remsorna på mitten men låt dem sitta ihop i övre kanten (som ett byxben). Sno ihop till en knut. Lägg bullarna på plåtar med bakplåtspapper. Täck dem med en bakduk och låt jäsa ca 30 minuter.</li>
+                    <li class="Rec-görlist">Sätt ugnen på 250°C.</li>
+                    <li class="Rec-görlist">Pensling: Pensla bullarna med uppvispat ägg och strö på pärlsocker.</li>
+                    <li class="Rec-görlist">
+                        Grädda bullarna mitt i ugnen ca 8 minuter. Låt dem kallna på galler övertäckta med bakduk.</li>
+                    </ol>
+            </div>
+
+        </div>
+    </div>
+    <button onclick="audio.play()">oooo</button>
+    <button id="toggle">ost</button>
+    <button onclick="Ostskina()"></button>
+
+    <!--Fixed header !-->
+    <header>
+        <div class="topbar">
+            <nav class="navbar">
+                <a href="" class="nav-brand" ><img class="nav-img" src="./bilder/MetallicHauntingFunnelweaverspider-size_restricted.gif" alt=""></a>
+                <ul class="nav-menu">
+                    <li class="nav-länk"><a class="nav-a" href="">Hem</a></li>
+                    <li class="nav-länk"><a class="nav-a" href="">Lista</a></li>
+                    <li class="nav-länk"><a onclick="audio.play()" class="nav-a" href="">Ost</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Copyright-->
+
+    <footer>
+        
+        <div>
+            <p class="copy-text">© 2023 Wallenberg All rights reserved. This media is under exclusive right to its creators.</p>
+            <img class="copy-img" src="./bilder/MetallicHauntingFunnelweaverspider-size_restricted.gif" alt="">
+        </div>
+    </footer>
+
+
+    
+
+
+    
+</body>
+</html>

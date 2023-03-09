@@ -1,0 +1,265 @@
+@font-face {
+    font-family: mingliu;
+    src: url("./MingLiU.woff2") format("woff2");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    background-color: white;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+footer{
+    position: fixed;
+    right: 5px; bottom: 40px;
+    width: 100px;
+    height: 80px;
+    
+    
+}
+
+/*Font*/
+
+.copy-text, .nav-a, .lista-button{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Copywright text*/
+
+.copy-text{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.copy-img{
+    width: 20px;
+    height: 20px;
+}
+
+/*Hemsida*/
+
+.hemsida{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+
+
+/* Topbar */
+
+.topbar{
+    margin: auto;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style-type: none;
+    
+
+}
+
+
+.nav-img{
+    width: 60px;
+    height: 60px;
+}
+
+.nav-a{
+    color: black;
+    text-decoration: none;
+    font-family: mingliu;
+    
+}
+.nav-a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.6s;
+}
+
+.rubriker{
+    font-family: monospace;
+}
+
+
+
+
+/* Lista */
+
+.lista{
+    padding-top: 150px;
+    padding-left: 15%;
+    
+    list-style-type: none;
+    z-index: 1;
+}
+
+.lista-elm{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.lista-elm:hover{
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.2s;
+
+}
+
+.lista-button{
+    
+    text-decoration: none;
+    
+  
+
+}
+.lista-button:hover{
+    border: 1px solid black;
+    animation: button 1.4s infinite;
+}
+
+.lista-button:active{
+    border: 1px solid black;
+
+}
+
+/*Recpet*/
+
+.is-hidden {
+    display: none;
+}
+
+#content{
+    
+    /*display: grid;*/
+    grid-template-rows: repeat(9, 100px);
+    grid-template-columns: repeat(7, 100px);
+    gap: 20px 20px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 40px;
+
+
+}
+
+.Rec-bilddiv{
+    grid-area: 1 / 1 / 4 / 4 ;
+}
+
+.Rec-bild{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*rec-Huvud*/
+
+.Rec-huvud{
+    grid-area: 1 / 4 / 3 / 8;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.Rec-tidbild{
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+
+.Rec-tid{
+    display: flex;
+    gap: 10px;
+}
+
+/*rec-ingre*/
+
+.Rec-ingre{
+    grid-area: 4 / 1 / 10 / 3;
+    padding: 10px;
+    width: 130%;
+    
+}
+
+.Rec-ingrelist{
+    padding: 10px;
+    margin: 10px;
+    margin-left: -10px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*rec-gör*/
+
+.Rec-gör{
+    grid-area: 2 / 4 / 10 /  8;
+    margin-left: 10px;    
+}
+
+.Rec-görlist{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+
+
+/*Animation*/
+
+@keyframes button {
+    0%  {border-color: white;}
+    50%  {border-color: black;}
+    100%  {border-color: white;}
+
+  }
+
+
+/*Mobil*/
+
+@media (max-width: 500px) {
+    .lista{
+        padding-top: 150px;
+        padding-left: 5%;
+        
+        list-style-type: none;
+
+    }
+    
+}
+
